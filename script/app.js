@@ -21,6 +21,14 @@ gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.puzzleref
  //debugger;
 }
 
+function resetPuzzlePieces(){
+	for (let i=0; i < dropZones.length; i++){
+		if(dropZones[i].childNodes.length != 0)
+		puzzlePieceMain.appendChild(dropZones[i].firstChild);
+	}
+}
+
+
 function allowDrag(event) {
 	console.log ('started dragging an image');
 
@@ -48,6 +56,7 @@ function allowDrop(event) {
  }
 
 puzzleButtons.forEach(button => button.addEventListener('click', changeImageSet));
+puzzleButtons.forEach(button => button.addEventListener('click', resetPuzzlePieces));
 
 dropPuzzle.forEach(piece => piece.addEventListener('dragstart', allowDrag));
 
