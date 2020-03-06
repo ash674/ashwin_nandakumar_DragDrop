@@ -25,7 +25,11 @@ body {
 
 .puzzle-pieces { width: 300px; margin-right: 20px; }
 
-.puzzle-board { width: 600px; }
+.puzzle-board { 
+
+	background-image: url("../images/backGround0.jpg");
+	width: 600px; 
+}
 
 .puzzle-image {
 	width: 40%;
