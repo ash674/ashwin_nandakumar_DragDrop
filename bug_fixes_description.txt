@@ -1,0 +1,16 @@
+Bug Fixes 
+
+1. Dropzones Bug 
+
+Steps :
+1. We have to check if the dropzone is full or empty
+2. If that is empty we have to append the current dragged image
+3. if its full we have to append the First child to puzzlePieceMain
+
+
+2. Reset Bug
+
+Steps: 
+1. Using the for loop we have to go through the entire length of dropZones
+2. With a if statement inside for loop we have to check if the dropZones are empty (we want it to be full)
+3. If its full we have to append the child to puzzlePieceMain
